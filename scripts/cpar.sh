@@ -53,5 +53,5 @@ for ((i=0; i<$TotalNumberOfJobs; i++)); do
   wait_jobs $MaxJobsInParallel # The number of jobs being launched in parallel
 done
 
-# Handle the residual jobs when TotalNumberOfJobs is not divible by MaxJobsInParallel
+# Handle the last batch when TotalNumberOfJobs is not divible by MaxJobsInParallel
 wait_jobs 0
